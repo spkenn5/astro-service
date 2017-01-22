@@ -1,0 +1,155 @@
+{
+  "name": "astro-service",
+  "base": "Model",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {},
+  "validations": [],
+  "relations": {},
+  "acls": [],
+  "methods": {
+    "add": {
+      "isStatic": true,
+      "accepts": [
+        {
+          "arg": "user_id",
+          "type": "string",
+          "required": true,
+          "description": "gets rest id",
+          "http": {
+            "source": "query"
+          }
+        },
+        {
+          "arg": "user_name",
+          "type": "string",
+          "required": true,
+          "description": "gets rest id",
+          "http": {
+            "source": "query"
+          }
+        },
+        {
+          "arg": "user_email",
+          "type": "string",
+          "required": true,
+          "description": "gets rest id",
+          "http": {
+            "source": "query"
+          }
+        },
+        {
+          "arg": "user_favorite_channel",
+          "type": "string",
+          "required": true,
+          "description": "gets rest id",
+          "http": {
+            "source": "query"
+          }
+        },
+        {
+          "arg": "user_favorite_program",
+          "type": "string",
+          "required": true,
+          "description": "gets rest id",
+          "http": {
+            "source": "query"
+          }
+        }        
+      ],
+      "returns": [
+        {
+          "arg": "success",
+          "description": "process status",
+          "type": "boolean"
+        },
+        {
+          "arg": "message",
+          "description": "returns response",
+          "type": "string"
+        },
+        {
+          "arg": "data",
+          "description": "returns list of recommended restaurant ids",
+          "type": "string"
+        }
+      ],
+      "description": "get top x liked photos",
+      "http": {
+        "verb": "get"
+      }
+    },
+  "delete": {
+      "isStatic": true,
+      "accepts": [
+        {
+          "arg": "user_id",
+          "type": "string",
+          "required": true,
+          "description": "gets rest id",
+          "http": {
+            "source": "query"
+          }
+        }
+      ],
+      "returns": [
+        {
+          "arg": "success",
+          "description": "process status",
+          "type": "boolean"
+        },
+        {
+          "arg": "message",
+          "description": "returns response",
+          "type": "string"
+        },
+        {
+          "arg": "data",
+          "description": "returns list of recommended restaurant ids",
+          "type": "string"
+        }
+      ],
+      "description": "get top x liked photos",
+      "http": {
+        "verb": "get"
+      }
+    },
+    "get": {
+      "isStatic": true,
+      "accepts": [
+        {
+          "arg": "user_id",
+          "type": "string",
+          "required": true,
+          "description": "gets rest id",
+          "http": {
+            "source": "query"
+          }
+        }
+      ],
+      "returns": [
+        {
+          "arg": "success",
+          "description": "process status",
+          "type": "boolean"
+        },
+        {
+          "arg": "message",
+          "description": "returns response",
+          "type": "string"
+        },
+        {
+          "arg": "data",
+          "description": "returns list of recommended restaurant ids",
+          "type": "string"
+        }
+      ],
+      "description": "get top x liked photos",
+      "http": {
+        "verb": "get"
+      }
+    }
+  }
+}

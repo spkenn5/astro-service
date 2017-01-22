@@ -1,0 +1,16 @@
+{
+  "db": {
+    "name": "db",
+    "connector": "memory"
+  },
+  "local": {
+    "host": "localhost",
+    "port": 3306,
+    "url": "mysql://root:qraved123@localhost:3306/weather",
+    "database": "weather",
+    "password": "qraved123",
+    "name": "local",
+    "user": "root",
+    "connector": "mysql"
+  }
+}

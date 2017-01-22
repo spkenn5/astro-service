@@ -1,0 +1,32 @@
+{
+  "name": "table_astrobots",
+  "base": "Model",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "user_id": {
+      "type": "string",
+      "required": true
+    },
+    "user_email": {
+      "type": "string",
+      "required": true
+    },
+    "user_name": {
+      "type": "string",
+      "required": true
+    },
+    "user_channel_fav": {
+      "type": "string"
+    },
+    "user_program_fav": {
+      "type": "string"
+    }
+  },
+  "validations": [],
+  "relations": {},
+  "acls": [],
+  "methods": {}
+}
