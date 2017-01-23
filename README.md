@@ -42,38 +42,6 @@ Response body :
 }
 ```
 
-
-##### GET
-
-Insert new items
-
-Request params :
-```javascript
-  user_id : String
-  user_email : String
-  user_photo : String
-  user_channel_fav : String
-  user_program_fav : String
-```
-
-Response body :
-```javascript
-{
-  "response" : 200
-  "status" : "Ok"
-  "data" : [
-    {
-      "id" : 1
-      "user_id" : "893472834314",
-      "user_email" : "user@email.com",
-      "user_photo"  : "http://aws.myserver.com/cdn/images/user123.jpg",
-      "user_channel_fav"  : "TV 1, TV 2, TV 3"
-      "user_program_fav"  : "Family Guy, Simpsons, Superman"
-    }
- ]
-}
-```
-
 ##### GET
 
 Get item
