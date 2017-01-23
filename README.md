@@ -12,18 +12,6 @@ npm start
 
 the service should be running at http://localhost:3000
 
-## 2) unique characters
-given a string, check whether the string have unique characters.
-
-```java
-public boolean isUnique(String str)
-input : "abcdef"
-output : true
-
-input : "abcdefa"
-output : false
-```
-
 ##### GET
 
 Insert new items
